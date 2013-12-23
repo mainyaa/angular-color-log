@@ -2,6 +2,8 @@
 
 Easy debugging with color log.
 
+![screenshot](https://raw.github.com/mainyaa/angular-clog/master/screenshot.png)
+
 ## Getting Start
 
  * `bower install angular-clog`
@@ -36,7 +38,6 @@ myApp.config(function(clogProvider) {
          <button ng-click="clog.error(message)">error</button>
        </div>
    ```
-
 
 ## WIP
 
