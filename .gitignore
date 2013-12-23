@@ -66,3 +66,5 @@ results
 node_modules
 
 
+### bower.gitignore
+bower_components
