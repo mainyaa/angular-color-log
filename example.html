@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>example</title>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="lib/bows.js"></script>
+        <script src="src/clog.js"></script>
+    </head>
+    <body ng-app="myModule">
+        <div ng-controller="LogCtrl">
+          <p>Reload this page with open console, enter text and hit the log button...</p>
+          Message:
+          <input type="text" ng-model="message"/>
+          <button ng-click="clog.log(message)">log</button>
+          <button ng-click="clog.warn(message)">warn</button>
+          <button ng-click="clog.info(message)">info</button>
+          <button ng-click="error(message)">error</button>
+        </div>
+        <script>
+
+angular.module('myModule', ['angular-nya-log']).config(['clogProvider', function(clogProvider) {
+        clogProvider.debugEnabled(false);
+        }])
+    .run();
+
+    function LogCtrl($scope, clog) {
+      $scope.clog = clog;
+      $scope.error = clog.consoleLog("error", "log controller");
+      clog.debug("debug print");
+      clog.log("log print");
+      clog.info("info print");
+      clog.warn("warn print");
+      clog.error("error print");
+      clog.error(this);
+      clog.error("aaa", "log controller");
+      $scope.message = 'Hello World!';
+    }
+    angular.module('myModule').controller("LogCtrl", LogCtrl);
+
+
+    </script>
+    </body>
+</html>
