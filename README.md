@@ -1,8 +1,10 @@
-# AngularUI Router
+# Angular Color Logger
 
 Easy debugging with color log.
 
 ![screenshot](https://raw.github.com/mainyaa/angular-clog/master/screenshot.png)
+
+
 
 ## Getting Start
 
