@@ -6,13 +6,13 @@ Easy debugging with color log.
 
  * `bower install angular-clog`
  * Add `angular-clog` to your `module()` dependencies
- * Setting flag `$clogProvider` to your module's `config()`
+ * Setting flag `clogProvider` to your module's `config()`
 
 
    ```javascript
-myApp.config(function($clogProvider) {
+myApp.config(function(clogProvider) {
   // Now set up debug enable
-  $clogProvider.setDebugEnable(true)
+  clogProvider.setDebugEnable(true)
    ```
 
  * Let's log it! 
@@ -43,5 +43,5 @@ myApp.config(function($clogProvider) {
 auto event dump
 
    ```javascript
-  $clogProvider.setAutoEventEnable(true) 
+  clogProvider.setAutoEventEnable(true) 
    ```
