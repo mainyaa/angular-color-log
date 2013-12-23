@@ -4,8 +4,8 @@ Easy debugging with color log.
 
 ## Getting Start
 
- * `bower install angular-nya-log`
- * Add `angular-nya-log` to your `module()` dependencies
+ * `bower install angular-clog`
+ * Add `angular-clog` to your `module()` dependencies
  * Setting flag `$clogProvider` to your module's `config()`
 
 
