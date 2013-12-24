@@ -1,5 +1,5 @@
 if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports === exports){
-  module.exports = 'angular-clog';
+  module.exports = 'nya.clog';
 }
 
 (function (window, angular, undefined) {
@@ -130,6 +130,8 @@ if (typeof module !== "undefined" && typeof exports !== "undefined" && module.ex
             };
         };
     }
-    angular.module('angular-clog', []).provider('clog', ClogProvider);
+    // shotcut
+    angular.module('nya', ['nya.clog']);
+    angular.module('nya.clog', []).provider('clog', ClogProvider);
 
 })(window, window.angular);

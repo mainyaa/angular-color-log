@@ -1,6 +1,6 @@
 {
-  "name": "angular-nya-log",
-  "version": "0.0.1",
+  "name": "angular-color-log",
+  "version": "0.1.1",
   "dependencies": {
     "angular": "~1.2.0",
     "json3": "~3.2.4",
